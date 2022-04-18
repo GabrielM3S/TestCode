@@ -17,3 +17,10 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+- task: HCLAppScanOnCloud@2
+  inputs:
+    AppSecTestService: 'ASoC Key'
+    applications: 'e3b599bf-699f-4643-9aef-84bc84997a69'
+    scanname: 'Altoro'
+    scantype: 'static'
+    email: true
